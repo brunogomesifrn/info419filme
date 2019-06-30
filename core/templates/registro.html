@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Cadastro</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}"  rel="stylesheet" type="text/css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' %}" rel='stylesheet' type='text/css'>
+
+  <!-- Plugin CSS -->
+  <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}"  rel="stylesheet">
+
+  <!-- Theme CSS - Includes Bootstrap -->
+  <link href="{% static 'css/creative.min.css' %}"  rel="stylesheet">
+
+</head>
+<body>
+<header class="masthead">
+	<div class="container h-100">
+<h1 class="text-uppercase text-white font-weight-bold">Cadastro de Usuário</h1>
+<form method="post">
+	{% csrf_token %}
+	<p class="text-uppercase text-white font-weight-bold">Usuário: {{ form.username }}</p>
+	<p class="text-uppercase text-white font-weight-bold">Senha: {{ form.password1 }}</p>
+	<p class="text-uppercase text-white font-weight-bold">Repetir a senha: {{ form.password2 }}</p>
+
+	<button  class="btn btn-primary btn-xl js-scroll-trigger"  type="submit">Salvar</button>
+	
+	</div>
+</header>
+</form>
+
+ <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/creative.min.js' %}"></script>
+</body>
+
+</html>
