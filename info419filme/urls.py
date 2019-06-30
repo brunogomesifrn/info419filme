@@ -15,7 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core.views import genero, genero_cadastro, editar, remover
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('genero/',genero, name="genero"),
+    path('genero_cadastro/',genero_cadastro, name="genero_cadastro"),
+    path('editar/<int:id>/', editar, name='editar'),
+    path('remover/<int:id>/', remover, name='remover'),
 ]
