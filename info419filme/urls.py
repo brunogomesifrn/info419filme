@@ -8,7 +8,7 @@ from django.urls import path
 from core.views import genero, genero_cadastro, editar, remover, filmess, filme_cadastro
 
 =======
-from core.views import index, galeria, registro, perfil, filmes, genero, meus_dados
+from core.views import index, galeria, registro, perfil, filmes, genero, meus_dados, foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8
 from django.contrib.auth import views as auth_views
 >>>>>>> 9ba0568778b8e0bc3e72e537b0400bf48cf7413f
 urlpatterns = [
