@@ -1,18 +1,4 @@
-"""info419filme URL Configuration
 
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/2.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -50,6 +36,16 @@ urlpatterns = [
     path('genero_cadastro/',genero_cadastro, name="genero_cadastro"),
     path('editar/<int:id>/', editar, name='editar'),
     path('remover/<int:id>/', remover, name='remover'),
+
+    #galeria
+    path('foto1/', foto1, name="foto1"),
+    path('foto2/', foto2, name="foto2"),
+    path('foto3/', foto3, name="foto3"),
+    path('foto4/', foto4, name="foto4"),
+    path('foto5/', foto5, name="foto5"),
+    path('foto6/', foto6, name="foto6"),
+    path('foto7/', foto7, name="foto7"),
+    path('foto8/', foto8, name="foto8"),
 ]
 =======
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
