@@ -40,3 +40,13 @@ def remover(request, id):
 
 	return redirect('genero')
 
+def filmess(request):
+	
+	return render(request, 'filmess.html', var)
+	
+def filme_cadastro(request):
+	
+
+	return render(request, 'filme_cadastro.html', var)
+	
+

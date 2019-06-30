@@ -19,7 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 <<<<<<< HEAD
-from core.views import genero, genero_cadastro, editar, remover
+from core.views import genero, genero_cadastro, editar, remover, filmess, filme_cadastro
 
 =======
 from core.views import index, galeria, registro, perfil, filmes, genero, meus_dados
@@ -50,6 +50,8 @@ urlpatterns = [
     path('genero_cadastro/',genero_cadastro, name="genero_cadastro"),
     path('editar/<int:id>/', editar, name='editar'),
     path('remover/<int:id>/', remover, name='remover'),
+    path('filmess/', filmess, name="filmess"),
+    path('filme_cadastro/',filme_cadastro, name="filme_cadastro"),
 ]
 =======
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
