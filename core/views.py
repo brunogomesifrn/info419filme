@@ -32,9 +32,6 @@ def genero(request):
 	}
 	return render(request, 'genero.html', var)
 
-def meus_dados(request):
-	return render(request, 'meus_dados.html')
-
 def genero_cadastro(request):
 	gen = GenerosForm(request.POST or None)
 	if gen.is_valid():
