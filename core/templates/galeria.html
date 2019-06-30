@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>Galeria de filmes</title>
+</head>
+<body>
+
+
+
+
+<table cellspacing="10" cellpadding="10">
+
+
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Galeria de Filmes</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left">
+
+  <tr> <td> <div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto1' %}"  class="d-block mb-4 h-100">
+            <img src="{% static 'fotos/foto1.jpg'%} " width="250px" height="250px" >
+          </a> </td>
+   </div>
+  
+
+    <td> <div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto2' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto2.jpg'%} " width="250px" height="250px" >
+          </a> </td>
+   </div>
+   
+
+    <td> <div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto3' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto3.jpg'%} " width="250px" height="250px" >
+          </a> </td> 
+  </div>
+
+    <td> <div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto4' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto4.jpg'%} " width="250px" height="250px" >
+          </a> </td> </tr>
+    </div>
+
+   <tr><td> <div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto5' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto5.jpg'%} " width="250px" height="250px" >
+          </a></td>
+   </div>
+
+    <td><div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto6' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto6.jpg'%} " width="250px" height="250px" >
+          </a> </td> 
+    </div>
+
+     <td><div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto7' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto7.jpg'%} " width="250px" height="250px" >
+          </a> </td>
+        </div>
+
+     <td><div class="col-lg-3 col-md-4 col-6">
+      <a href="{% url 'foto8' %}" class="d-block mb-4 h-100">
+             <img src="{% static 'fotos/foto8.jpg'%} " width="250px" height="250px" >
+          </a> </td>  </tr>
+        </div>
+
+    
+    </div>
+  </div>
+</table>
+
+</body>
+</html>
