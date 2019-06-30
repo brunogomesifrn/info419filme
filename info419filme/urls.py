@@ -18,8 +18,13 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 from django.urls import path
+<<<<<<< HEAD
+from core.views import genero, genero_cadastro, editar, remover
+
+=======
 from core.views import index, galeria, registro, perfil, filmes, genero, meus_dados
 from django.contrib.auth import views as auth_views
+>>>>>>> 9ba0568778b8e0bc3e72e537b0400bf48cf7413f
 urlpatterns = [
 	path('', index, name='index'),
 
@@ -40,5 +45,13 @@ urlpatterns = [
 	path('login/', auth_views.LoginView.as_view(), name='login'),
 	path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('admin/', admin.site.urls),
+<<<<<<< HEAD
+    path('genero/',genero, name="genero"),
+    path('genero_cadastro/',genero_cadastro, name="genero_cadastro"),
+    path('editar/<int:id>/', editar, name='editar'),
+    path('remover/<int:id>/', remover, name='remover'),
+]
+=======
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+>>>>>>> 9ba0568778b8e0bc3e72e537b0400bf48cf7413f
