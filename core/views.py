@@ -9,6 +9,9 @@ from .forms import FilmesForm, GenerosForm
 def foto1(request):
 	return render(request, 'foto1.html')
 
+def galeria(request):
+	return render(request, 'galeria.html')
+
 def foto2(request):
 	return render(request, 'foto2.html')
 
@@ -29,7 +32,7 @@ def foto7(request):
 
 def foto8(request):
 	return render(request, 'foto8.html')
-=======
+
 
 
 def index(request):
