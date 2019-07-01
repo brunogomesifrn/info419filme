@@ -1,0 +1,114 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Cadastro de Filmes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrapp.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/modern-bbusiness.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-12 mb-12"> FILMES </h1>
+
+   <hr />
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-lg-12 mb-12">
+
+      <h3>Cadastro:</h3>
+          
+        <form  action="admin_cursos.html" method="POST">
+
+          {% csrf_token %}
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Título:</label>
+              {{ form.titulo | add_class:"form-control" }}
+              <input type="text" class="form-control" name="at1" required>
+              <p class="help-block"></p>
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Duração:</label>
+              {{ form.duraçao | add_class:"form-control" }}
+              <input type="text" class="form-control" name="at2" required>
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Classificação:</label>
+              {{ form.classificaçao | add_class:"form-control" }}
+              <input type="text" class="form-control" name="at2" required>
+            </div>
+          </div>
+
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Foto:</label>
+              <input type="file" class="form-control" name="nome" required>
+              <p class="help-block"></p>
+            </div>
+          </div>
+            <br />
+          <p> Gênero: <br /> 
+            {{ form.genero | add_class:"form-control" }}
+            <input type="checkbox" name="gene" value="html" /> Ação <br />
+            <input type="checkbox" name="gene" value="css" /> Animação <br />
+            <input type="checkbox" name="gene" value="html" /> Aventura <br />
+            <input type="checkbox" name="gene" value="html" /> Comédia <br />
+            <input type="checkbox" name="gene" value="html" /> Documentário <br />
+            <input type="checkbox" name="gene" value="html" /> Fantasia <br />
+            <input type="checkbox" name="gene" value="html" /> Ficção Científica <br />
+            <input type="checkbox" name="gene" value="html" /> Musical <br />
+            <input type="checkbox" name="gene" value="html" /> Erótico <br />
+            <input type="checkbox" name="gene" value="html" /> Romance <br />
+            <input type="checkbox" name="gene" value="html" /> Suspense <br />
+            <input type="checkbox" name="gene" value="html" /> Terror <br />
+            <input type="checkbox" name="gene" value="html" /> Drama <br /></p>
+            
+          <br />
+          <button type="submit" class="btn btn-primary" id="sendMessageButton">Salvar</button>
+        </form>
+
+
+
+
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jqueerry.min.js"></script>
+  <script src="js/bootstrap.bbundle.min.js"></script>
+
+</body>
+
+</html>

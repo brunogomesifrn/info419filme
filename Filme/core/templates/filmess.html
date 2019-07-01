@@ -1,0 +1,107 @@
+{% load static %}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title> Filmes </title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrapp.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/modern-bbusiness.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-12 mb-12">Nome do Filme</h1>
+
+   <hr />
+
+    <!-- Content Row -->
+    <div class="row">
+      <div class="col-lg-12 mb-12">
+          <br />
+          <p><a href="{% url 'filme_cadastro' %}"><button type="button" class="btn btn-primary">Adicionar Filme</button></a></p>
+          <br />
+
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Título</th>
+                  <th scope="col">Duração</th>
+                  <th scope="col">Classificação</th>
+                  <th scope="col">Imagem</th>
+                  <th scope="col">Gênero</th>
+                  <th scope="col">Gerenciar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"> </th>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td>
+                      <a href="perfil_cursos_cadastro.html"><button type="button" class="btn btn-info">Editar</button></a>
+                      <a href="perfil_cursos.html"><button type="button" class="btn btn-danger">Excluir</button></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"> </th>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td>
+                      <a href="perfil_cursos_cadastro.html"><button type="button" class="btn btn-info">Editar</button></a>
+                      <a href="perfil_cursos.html"><button type="button" class="btn btn-danger">Excluir</button></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row"> </th>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+
+                  <td>
+                      <a href="perfil_cursos_cadastro.html"><button type="button" class="btn btn-info">Editar</button></a>
+                      <a href="perfil_cursos.html"><button type="button" class="btn btn-danger">Excluir</button></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+
+
+
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="js/jqueery.min.js"></script>
+  <script src="js/bootstrap.bbundle.min.js"></script>
+
+</body>
+
+</html>
