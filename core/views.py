@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from .models import Generos, filmes
 from .forms import FilmesForm, GenerosForm
 
-<<<<<<< HEAD
+
 def foto1(request):
 	return render(request, 'foto1.html')
 
@@ -104,17 +104,12 @@ def remover(request, id):
 
 	return redirect('genero')
 
-<<<<<<< HEAD
+
 def filmess(request):
-	
 	return render(request, 'filmess.html', var)
 	
 def filme_cadastro(request):
-	
-
 	return render(request, 'filme_cadastro.html', var)
 	
 
-=======
->>>>>>> 77b1d1743a1a9a490ba08c7816fc78ed20dec915
->>>>>>> e0dacd05788db9b060534583efba035e57ededde
+
